@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_title_padding">
+
+    <TextView
+        android:id="@+id/tv_commonTitle_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_title_titleSize"
+        android:textColor="@color/common_title_title_textColor"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        tools:text="标题"/>
+
+    <TextView
+        android:id="@+id/tv_commonTitle_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/common_title_back_textSize"
+        android:padding="@dimen/common_title_backAndRight_padding"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/common_title_back_textColor"
+        android:clickable="true"
+        android:text="返回"/>
+
+    <TextView
+        android:id="@+id/tv_commonTitle_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="功能"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:visibility="gone"
+        android:textColor="@color/common_title_right_textColor"
+        android:textSize="@dimen/common_title_right_textSize"
+        android:padding="@dimen/common_title_backAndRight_padding"/>
+
+</RelativeLayout>

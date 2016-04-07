@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common title  -->
+    <color name="common_title_background">#FFFFFF</color>
+    <color name="common_title_title_textColor">#000000</color>
+    <color name="common_title_back_textColor">#70B1FC</color>
+    <color name="common_title_right_textColor">#70B1FC</color>
+
+</resources>

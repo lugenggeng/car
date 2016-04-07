@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--公共的title 所使用-->
+    <dimen name="common_title_marginBottom">5dp</dimen>
+    <dimen name="common_title_padding">8dp</dimen>
+    <!--<dimen name="common_title_paddingRight">8dp</dimen>-->
+    <!--<dimen name="common_title_paddingTop">28dp</dimen>-->
+    <!--<dimen name="common_title_paddingBottom">8dp</dimen>-->
+    <dimen name="common_title_titleSize">20sp</dimen>
+    <dimen name="common_title_back_textSize">18sp</dimen>
+    <dimen name="common_title_right_textSize">18sp</dimen>
+    <dimen name="common_title_backAndRight_padding">4dp</dimen>
+</resources>
