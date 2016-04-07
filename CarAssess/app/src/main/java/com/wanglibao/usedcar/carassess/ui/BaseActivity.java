@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.wanglibao.usedcar.carassess.MyApplication;
@@ -18,6 +19,9 @@ import butterknife.ButterKnife;
 public class BaseActivity extends Activity implements View.OnClickListener{
 
     MyApplication myApplication;
+
+    @Bind(R.id.login_title)
+    public RelativeLayout rlTitle;
 
     @Bind(R.id.tv_commonTitle_title)
     public TextView tvTitle;

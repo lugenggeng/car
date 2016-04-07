@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".ui.activity.LoginActivity">
 
     <include
@@ -10,8 +12,59 @@
         layout="@layout/common_title"/>
 
     <TextView
+        android:id="@+id/tv_login_title1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/login_title"
-        android:text="Hello World!" />
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_login_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/tv_login_title1"
+        android:text="@string/login_title"/>
+
+    <EditText
+        android:id="@+id/edit_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/login_phone_hint"
+        android:layout_below="@+id/tv_login_title2"/>
+
+    <EditText
+        android:id="@+id/edit_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edit_login_phone"
+        android:hint="@string/login_password_hint"/>
+    
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_login_password"/>
+
+    <TextView
+        android:id="@+id/tv_login_loginFailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:textColor="@color/common_title_back_textColor"
+        android:text="@string/login_loginFailed"
+        android:layout_below="@+id/btn_login_login"/>
 </RelativeLayout>
