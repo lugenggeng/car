@@ -20,9 +20,6 @@ public class BaseActivity extends Activity implements View.OnClickListener{
 
     MyApplication myApplication;
 
-    @Bind(R.id.login_title)
-    public RelativeLayout rlTitle;
-
     @Bind(R.id.tv_commonTitle_title)
     public TextView tvTitle;
 

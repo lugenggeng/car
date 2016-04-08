@@ -5,6 +5,7 @@ import com.j256.ormlite.table.DatabaseTable;
 
 /**
  * Created by lugg on 2016/4/7.
+ * 缺陷数据
  */
 @DatabaseTable(tableName = "Defect")
 public class Defect {
@@ -19,13 +20,18 @@ public class Defect {
     public String assessId;
 
     /**
-     * 区域id
+     * 区域id(一级)
      */
     @DatabaseField
     public String positionId;
 
     /**
-     * 缺陷id
+     * 详细位置id(二级)
+     */
+    public String detailPoritionId;
+
+    /**
+     * 缺陷id(三级)
      */
     @DatabaseField
     public String defectId;
@@ -40,5 +46,5 @@ public class Defect {
      * 是否是漆膜数据
      */
     @DatabaseField
-    public boolean film;
+    public boolean film = false;
 }

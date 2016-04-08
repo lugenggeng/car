@@ -3,10 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ui.activity.user.ForgetActivity">
+
+    <include
+        android:id="@+id/rl_forget_title"
+        layout="@layout/common_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="40dp"
+        android:layout_below="@+id/rl_forget_title">
+
+        <EditText
+            android:id="@+id/edit_forget_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="11"
+            android:layout_marginBottom="20dp"
+            android:hint="手机号"/>
+
+        <EditText
+            android:id="@+id/edit_forget_newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:layout_marginBottom="20dp"
+            android:password="true"
+            android:hint="新密码"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <EditText
+                android:id="@+id/edit_forget_verifyCode"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="10"
+                android:layout_height="wrap_content"
+                android:hint="验证码"/>
+
+            <Button
+                android:id="@+id/btn_forget_getCerifyCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_forget_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="完成"/>
+
+    </LinearLayout>
+
+
+
 
 </RelativeLayout>

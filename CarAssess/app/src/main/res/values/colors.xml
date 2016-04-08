@@ -7,4 +7,7 @@
     <color name="common_title_back_textColor">#70B1FC</color>
     <color name="common_title_right_textColor">#70B1FC</color>
 
+    <!-- account manage -->
+    <color name="account_manage_lable_textColor">#757777</color>
+
 </resources>

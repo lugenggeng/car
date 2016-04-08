@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_list_item_nocompleted_carImage"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_list_item_nocompleted_carTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="大众宝来2008年1.6L豪华型"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/image_list_item_nocompleted_carImage"/>
+
+    <TextView
+        android:id="@+id/tv_list_item_nocompleted_assessId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="单号:BEIJING20160801ZY"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/image_list_item_nocompleted_carImage"
+        android:layout_below="@+id/tv_list_item_nocompleted_carTitle"/>
+
+    <TextView
+        android:id="@+id/tv_list_item_nocompleted_completed_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="完成度:80%"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/image_list_item_nocompleted_carImage"
+        android:layout_below="@+id/tv_list_item_nocompleted_assessId"/>
+
+    <TextView
+        android:id="@+id/tv_list_item_nocompleted_lastModifyDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="最后编辑时间:2016-07-23 19:32"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/image_list_item_nocompleted_carImage"
+        android:layout_below="@+id/tv_list_item_nocompleted_completed_degree"/>
+</RelativeLayout>

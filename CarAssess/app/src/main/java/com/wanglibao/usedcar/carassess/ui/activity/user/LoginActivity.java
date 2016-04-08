@@ -1,10 +1,12 @@
 package com.wanglibao.usedcar.carassess.ui.activity.user;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.wanglibao.usedcar.carassess.R;
@@ -31,6 +33,8 @@ public class LoginActivity extends BaseActivity {
     Button btnLogin;
     @Bind(R.id.tv_login_loginFailed)
     TextView tvLoginFailed;
+    @Bind(R.id.login_title)
+    public RelativeLayout rlTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +70,8 @@ public class LoginActivity extends BaseActivity {
 
                         @Override
                         public void onResponse(Object response) {
-                            ToastUtil.createNormalToast(LoginActivity.this,"登录成功");
+                            startActivity(new Intent(LoginActivity.this,AccountManageActivity.class));
+                            finish();
                         }
                     });
                 }else{
@@ -74,7 +79,7 @@ public class LoginActivity extends BaseActivity {
                 }
                 break;
             case R.id.tv_login_loginFailed:
-
+                startActivity(new Intent(this,ForgetActivity.class));
                 break;
         }
     }

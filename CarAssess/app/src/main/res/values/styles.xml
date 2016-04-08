@@ -1,5 +1,12 @@
 <resources>
 
+    <style name="account_manage_textview_labal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/activity_account_manage_textSize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
 
 
 

@@ -4,11 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.wanglibao.usedcar.carassess.R;
+import com.wanglibao.usedcar.carassess.ui.BaseActivity;
 
 /**
  * 评估报告提交
  */
-public class ReportSubmitActivity extends AppCompatActivity {
+public class ReportSubmitActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -105,7 +105,7 @@ public class CarRegister {
      * 出厂日期
      */
     @DatabaseField
-    public Date dateOfProduction;
+    public Date productionDate;
 
     /**
      * 颜色
@@ -135,7 +135,7 @@ public class CarRegister {
      * 车辆获取方式
      */
     @DatabaseField
-    public String carSource;
+    public String carProductionSource;
 
     /**
      * 汽车排量

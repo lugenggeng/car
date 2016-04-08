@@ -13,13 +13,19 @@ public class CarImage {
     public int id;
 
     /**
+     * 评估车辆id
+     */
+    @DatabaseField
+    public String assessId;
+
+    /**
      * 图片的路径
      */
     @DatabaseField
     public String imagePath;
 
     /**
-     * 是否必须,true,必须且只能有一张图片;false,可以没有也可以有多张图片
+     * 是否必须,true,最少一张;false,<=0
      */
     @DatabaseField
     public boolean must = false;
@@ -35,6 +41,8 @@ public class CarImage {
      */
     @DatabaseField
     public boolean cover = false;
+
+
 
 
 

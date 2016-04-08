@@ -3,10 +3,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".ui.activity.user.AccountManageActivity">
+
+    <include
+        android:id="@+id/rl_account_manage_title"
+        layout="@layout/common_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_below="@+id/rl_account_manage_title">
+
+        <TextView
+            android:id="@+id/tv_account_manage_accountInfo_labal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_account_manage_textSize"
+            android:textColor="@color/account_manage_lable_textColor"
+            android:text="账户信息"/>
+
+        <View
+            android:id="@+id/view_account_manage_accountInfo_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tv_account_manage_accountInfo_labal"
+            android:background="@color/account_manage_lable_textColor"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_name_labal"
+            android:layout_below="@+id/view_account_manage_accountInfo_line"
+            style="@style/account_manage_textview_labal"
+            android:text="姓名"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_name"
+            android:layout_below="@+id/view_account_manage_accountInfo_line"
+            style="@style/account_manage_textview_labal"
+            android:layout_alignParentRight="true"
+            android:text="---"
+            tools:text="鲁耿耿"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_department_labal"
+            style="@style/account_manage_textview_labal"
+            android:text="部门"
+            android:layout_below="@+id/tv_account_manage_name_labal"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_department"
+            style="@style/account_manage_textview_labal"
+            android:text="---"
+            tools:text="技术部"
+            android:layout_below="@+id/tv_account_manage_name_labal"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_acouunt_manage_phone_labal"
+            style="@style/account_manage_textview_labal"
+            android:text="手机号"
+            android:layout_below="@+id/tv_account_manage_department_labal"/>
+
+        <TextView
+            android:id="@+id/tv_acouunt_manage_phone"
+            style="@style/account_manage_textview_labal"
+            android:text="---"
+            tools:text="13552408894"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_account_manage_department_labal" />
+
+        <TextView
+            android:id="@+id/tv_account_manage_accountSecurity_labal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/activity_account_manage_textSize"
+            android:textColor="@color/account_manage_lable_textColor"
+            android:layout_below="@+id/tv_acouunt_manage_phone_labal"
+            android:text="账户安全"/>
+
+        <View
+            android:id="@+id/tv_account_manage_accountSecurity_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/tv_account_manage_accountSecurity_labal"
+            android:background="@color/account_manage_lable_textColor"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_password_labal"
+            style="@style/account_manage_textview_labal"
+            android:text="密码"
+            android:layout_below="@+id/tv_account_manage_accountSecurity_line"/>
+
+        <TextView
+            android:id="@+id/tv_account_manage_forgetPassword"
+            style="@style/account_manage_textview_labal"
+            android:text="修改密码 >"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:layout_below="@+id/tv_account_manage_accountSecurity_line"/>
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -7,6 +7,7 @@ import java.sql.Date;
 
 /**
  * Created by lugg on 2016/4/6.
+ * 主表,点击新增时增加一条记录
  *
  */
 @DatabaseTable(tableName = "Car")
@@ -29,5 +30,11 @@ public class Car {
      */
     @DatabaseField
     public String userName;
+
+    /**
+     * 最后一次修改的时间
+     */
+    @DatabaseField
+    public Date lastUpdateTime;
 
 }
