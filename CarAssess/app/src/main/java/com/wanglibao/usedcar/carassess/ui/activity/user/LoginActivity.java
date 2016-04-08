@@ -1,4 +1,4 @@
-package com.wanglibao.usedcar.carassess.ui.activity;
+package com.wanglibao.usedcar.carassess.ui.activity.user;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -18,6 +18,9 @@ import butterknife.ButterKnife;
 import okhttp3.Call;
 import okhttp3.Response;
 
+/**
+ * 登录
+ */
 public class LoginActivity extends BaseActivity {
 
     @Bind(R.id.edit_login_phone)
@@ -35,7 +38,6 @@ public class LoginActivity extends BaseActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
         initView();
-        ToastUtil.createNormalToast(this,"");
     }
 
     private void initView() {

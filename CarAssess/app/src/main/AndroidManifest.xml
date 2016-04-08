@@ -2,24 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wanglibao.usedcar.carassess">
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:name=".MyApplication"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ui.activity.LoginActivity">
+        <activity android:name=".ui.activity.user.LoginActivity" />
+        <activity android:name=".ui.activity.StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.user.ForgetActivity" />
+        <activity android:name=".ui.activity.user.AccountManageActivity" />
+        <activity android:name=".ui.activity.user.ModifyPasswordActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.activity.assess.NewAssessActivity" />
+        <activity android:name=".ui.activity.assess.AssessActivity" />
+        <activity android:name=".ui.activity.assess.ImageActivity" />
+        <activity android:name=".ui.activity.assess.CarRegisterActivity" />
+        <activity android:name=".ui.activity.assess.DefectActivity" />
+        <activity android:name=".ui.activity.assess.AssessReportActivity" />
+        <activity android:name=".ui.activity.assess.ReportSubmitActivity" />
+        <activity android:name=".ui.activity.FinishedAssessActivity" />
+        <activity android:name=".ui.activity.NotFinishedActivity"></activity>
     </application>
 
 </manifest>

@@ -17,4 +17,8 @@ public class LoginImpl {
 //        OkHttpUtils.get().url("").addParams("","").addParams("","").build().execute(callback);
 
     }
+
+    public static boolean whetherLogin(){
+        return true;
+    }
 }
