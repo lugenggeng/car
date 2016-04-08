@@ -13,4 +13,6 @@
 
     <dimen name="activity_paddingLeft">16dp</dimen>
     <dimen name="activity_paddingRight">16dp</dimen>
+
+    <dimen name="activity_account_manage_textSize">16sp</dimen>
 </resources>

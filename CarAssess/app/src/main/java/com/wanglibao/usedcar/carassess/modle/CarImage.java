@@ -13,6 +13,12 @@ public class CarImage {
     public int id;
 
     /**
+     * 评估车辆id
+     */
+    @DatabaseField
+    public String assessId;
+
+    /**
      * 图片的路径
      */
     @DatabaseField
@@ -35,6 +41,8 @@ public class CarImage {
      */
     @DatabaseField
     public boolean cover = false;
+
+
 
 
 

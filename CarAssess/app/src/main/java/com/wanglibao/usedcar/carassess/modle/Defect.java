@@ -5,6 +5,7 @@ import com.j256.ormlite.table.DatabaseTable;
 
 /**
  * Created by lugg on 2016/4/7.
+ * 缺陷数据
  */
 @DatabaseTable(tableName = "Defect")
 public class Defect {

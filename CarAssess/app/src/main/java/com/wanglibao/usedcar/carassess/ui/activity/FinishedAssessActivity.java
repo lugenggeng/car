@@ -4,11 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.wanglibao.usedcar.carassess.R;
+import com.wanglibao.usedcar.carassess.ui.BaseActivity;
 
 /**
  * 已完成评估
  */
-public class FinishedAssessActivity extends AppCompatActivity {
+public class FinishedAssessActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
